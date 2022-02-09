@@ -1,0 +1,39 @@
+{
+  "employees": [
+    {
+      "name": "prasad",
+      "username": "prasad",
+      "password": "prasad",
+      "email": "prasad@gmail.com",
+      "id": 1
+    },
+    {
+      "name": "Prathamesh",
+      "username": "prathamesh",
+      "password": "12345",
+      "email": "prathamnadhe@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "pavel",
+      "username": "pavel",
+      "password": "12345",
+      "email": "pavel@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "admin",
+      "username": "admin",
+      "password": "12345",
+      "email": "admin@gmail.com",
+      "id": 4
+    },
+    {
+      "name": "Bella",
+      "email": "bella@gmail.com",
+      "username": "bella",
+      "password": "12345",
+      "id": 5
+    }
+  ]
+}
