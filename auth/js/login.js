@@ -36,7 +36,7 @@ $(document).ready(() => {
                             if(value.username == username && value.password == password)
                             {
                                 alert("Welcome "+ value.username)
-                                window.location="http://127.0.0.1:5500/auth/html/admin.html"
+                                window.location.href="http://127.0.0.1:5501/auth/html/admin.html"
                                 return true;
                             }
                             
@@ -61,12 +61,11 @@ $(document).ready(() => {
                 success: function(data){
                     console.table([data]);
                     $.each(data, function(key, value) {
-                        // console.log(value.username);
                         if(value.username != "" && value.password != "") {
                             if(value.username == username && value.password == password)
                             {
                                 alert("Welcome "+ value.username)
-                                window.location="http://127.0.0.1:5500/auth/html/registration.html"
+                                window.location.href="http://127.0.0.1:5501/landingPages/html/user.html";
                                 return true;
                             }
                         }
@@ -75,7 +74,7 @@ $(document).ready(() => {
 
                 error: (x)=> {
                     alert("Wrong credentials");
-                    window.location="http://127.0.0.1:5500/auth/html/login.html"
+                    window.location.href="http://127.0.0.1:5500/auth/html/login.html";
                 }
             })
         }

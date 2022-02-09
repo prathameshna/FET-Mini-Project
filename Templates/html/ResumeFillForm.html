@@ -26,9 +26,34 @@
 
 <body>
 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Resume Builder</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+            aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../../landingPages/html/landing_page.html">Home 
+                            <span class="sr-only"></span>
+                        </a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
 
     <div class="container" id="cv-form">
-        <h1 class="text-center my-3 myHeader">My Resume Generator © FET Group 4</h1>
+        <h1 class="text-center  myHeader">My Resume Generator © FET Group 4</h1>
 
 
         <div class="row my-5">
@@ -128,14 +153,20 @@
     <br>
     <br>
 
-    <div class="container" id="cv-template">
+    <div class="print-area"> 
+        <div class="container" id="cv-template">
         <h1 class="d-flex justify-content-center">Template 1</h1>
         <div class="row">
-            <div class="col-md-5 text-center py-5 background">
+            <div class="col-md-3 text-center py-5 background">
                 <!-- first Column -->
                 <!-- <img src="https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-portrait-176256935.jpg"
                     alt="" class="img-fluid myImg" id="previewImg"> -->
-                <div class="container displayImg" id="previewImg">
+                <div class="container" id="previewImg" style="width: 200px;
+                    height: 200px;
+                    border: 3px solid black;
+                    background-position: center;
+                    background-size: cover;
+                    border-radius: 50%;">
 
                 </div>
                 <!-- <img src="" id="previewImg" class="img-fluid myImg"> -->
@@ -198,12 +229,13 @@
                     </div>
                 </div>
 
-                <div class="container text-center mt-4">
-                    <button onclick="printCV()" class="btn btn-dark">Print CV</button>
-                </div>
             </div>
         </div>
     </div>
+</div>
+
+        
+   
 
     <script src="../js/Field&Template1.js"></script>
 
@@ -213,90 +245,83 @@
     <!--Template 2-->
     <br>
     <br>
-
-    <div class="container" id="cv-template2">
-        <h1 class="d-flex justify-content-center">Template 2</h1>
-        <div class="row">
-            <div class="col-md-6 text-center py-5 background3">
-                <!-- first Column -->
-                <!-- <img src="https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-portrait-176256935.jpg"
-                    alt="" class="img-fluid myImg" id="previewImg"> -->
-                <div class="container" id="previewImg2" style="width: 200px;
-                    height: 200px;
-                    border: 3px solid rgb(172, 102, 212);
-                    background-position: center;
-                    background-size: cover;
-                    border-radius: 25%;">
-
-                </div>
-                <!-- <img src="" id="previewImg" class="img-fluid myImg"> -->
-                <script src="../js/profilePic.js"></script>
-
-                <div class="container">
-                    <p id="nameTs">ABC</p>
-                    <p id="contactT2">+91-97983xxxx, +91-2321xxxx</p>
-                    <p id="addressT2">4232 Willow Greene Drive, 36104, Alabama, AL</p>
-
-                    <hr>
-
-                    <p><a id="fbT2" href="#1">abc@cybage.com</a></p>
-                    <p><a id="instaT2" href="#2">Git-Repository</a></p>
-                    <p><a id="linkedT2" href="#3">LinkedIn ID</a></p>
-                </div>
-            </div>
-            <div class="col-md-6 py-5 background2">
-                <!-- second column -->
-                <h1 id="nameTs2" class="text-center" style="font-weight: 988;">Name</h1>
-
-                <!-- objective card -->
-                <div class="card mt-4">
-                    <div class="card-header background">Objective</div>
-                    <div class="card-body ">
-                        <p id="objectiveT2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro placeat
-                            voluptatem sint rerum nobis quam illo esse maxime doloribus accusantium dolorem saepe
-                            perferendis, odio necessitatibus dolorum ullam dolores pariatur unde assumenda quas ipsa
-                            expedita
-                            iure ab quisquam.
-                            Earum, consequatur! Debitis obcaecati sequi neque, vitae facere sed blanditiis fugit sint
-                            ea!</p>
-                    </div>
-                </div>
-                <!-- Work experience card -->
-                <div class="card mt-4">
-                    <div class="card-header background">Work Experience</div>
-                    <div class="card-body ">
-                        <ul id="weT1">
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nam.</li>
-
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nam.</li>
-
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nam.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Academic Qualification -->
-                <div class="card mt-4">
-                    <div class="card-header background">Academic Qualification</div>
-                    <div class="card-body ">
-                        <ul id="aqT1">
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nam.</li>
-
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nam.</li>
-
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nam.</li>
-                        </ul>
+        
+    <div class="print-area"> 
+        <div class="container" id="cv-template2">
+            <h1 class="d-flex justify-content-center">Template 2</h1>
+            <div class="row">
+                <div class="col-md-3 text-center py-5 background3">
+                    <div class="container" id="previewImg2" style="width: 200px;
+                        height: 200px;
+                        border: 3px solid rgb(172, 102, 212);
+                        background-position: center;
+                        background-size: cover;
+                        border-radius: 25%;">
 
                     </div>
-                </div>
+                    <script src="../js/profilePic.js"></script>
 
-                <div class="container text-center mt-4">
-                    <button onclick="printCV()" class="btn btn-dark">Print CV</button>
+                    <div class="container">
+                        <p id="nameTs">ABC</p>
+                        <p id="contactT2">+91-97983xxxx, +91-2321xxxx</p>
+                        <p id="addressT2">4232 Willow Greene Drive, 36104, Alabama, AL</p>
+
+                        <hr>
+
+                        <p><a id="fbT2" href="#1">abc@cybage.com</a></p>
+                        <p><a id="instaT2" href="#2">Git-Repository</a></p>
+                        <p><a id="linkedT2" href="#3">LinkedIn ID</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 py-5 background2">
+                    <!-- second column -->
+                    <h1 id="nameTs2" class="text-center" style="font-weight: 988;">Name</h1>
+
+                    <!-- objective card -->
+                    <div class="card mt-4">
+                        <div class="card-header background">Objective</div>
+                        <div class="card-body ">
+                            <p id="objectiveT2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro placeat
+                                voluptatem sint rerum nobis quam illo esse maxime doloribus accusantium dolorem saepe
+                                perferendis, odio necessitatibus dolorum ullam dolores pariatur unde assumenda quas ipsa
+                                expedita
+                                iure ab quisquam.
+                                Earum, consequatur! Debitis obcaecati sequi neque, vitae facere sed blanditiis fugit sint
+                                ea!</p>
+                        </div>
+                    </div>
+                    <!-- Work experience card -->
+                    <div class="card mt-4">
+                        <div class="card-header background">Work Experience</div>
+                        <div class="card-body ">
+                            <ul id="weT1">
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nam.</li>
+
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nam.</li>
+
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nam.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Academic Qualification -->
+                    <div class="card mt-4">
+                        <div class="card-header background">Academic Qualification</div>
+                        <div class="card-body ">
+                            <ul id="aqT1">
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nam.</li>
+
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nam.</li>
+
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nam.</li>
+                            </ul>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
 
     <script src="../js/Template2.js"></script>
 
@@ -308,89 +333,84 @@
     <br>
     <br>
 
-    <div class="container" id="cv-template3">
-        <h1 class="d-flex justify-content-center">Template 3</h1>
-        <div class="row">
-            <div class="col-md-6 text-center py-5 background4">
-                <!-- first Column -->
-                <!-- <img src="https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-portrait-176256935.jpg"
-                    alt="" class="img-fluid myImg" id="previewImg"> -->
-                <div class="container" id="previewImg3" style="width: 200px;
-                    height: 200px;
-                    border: 3px solid white;
-                    background-position: center;
-                    background-size: cover;
-                    border-radius: 35%;">
-
-                </div>
-                <!-- <img src="" id="previewImg" class="img-fluid myImg"> -->
-                <script src="../js/profilePic.js"></script>
-
-                <div class="container">
-                    <p id="nameTss">ABC</p>
-                    <p id="contactT3">+91-97983xxxx, +91-2321xxxx</p>
-                    <p id="addressT3">4232 Willow Greene Drive, 36104, Alabama, AL</p>
-
-                    <hr>
-
-                    <p><a id="fbT3" href="#1">abc@cybage.com</a></p>
-                    <p><a id="instaT3" href="#2">Git-Repository</a></p>
-                    <p><a id="linkedT3" href="#3">LinkedIn ID</a></p>
-                </div>
-            </div>
-            <div class="col-md-6 py-5 background5">
-                <!-- second column -->
-                <h1 id="nameTss2" class="text-center" style="font-weight: 988;">Name</h1>
-
-                <!-- objective card -->
-                <div class="card mt-4">
-                    <div class="card-header background">Objective</div>
-                    <div class="card-body ">
-                        <p id="objectiveT3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro placeat
-                            voluptatem sint rerum nobis quam illo esse maxime doloribus accusantium dolorem saepe
-                            perferendis, odio necessitatibus dolorum ullam dolores pariatur unde assumenda quas ipsa
-                            expedita
-                            iure ab quisquam.
-                            Earum, consequatur! Debitis obcaecati sequi neque, vitae facere sed blanditiis fugit sint
-                            ea!</p>
-                    </div>
-                </div>
-                <!-- Work experience card -->
-                <div class="card mt-4">
-                    <div class="card-header background">Work Experience</div>
-                    <div class="card-body ">
-                        <ul id="weT2">
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nam.</li>
-
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nam.</li>
-
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nam.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Academic Qualification -->
-                <div class="card mt-4">
-                    <div class="card-header background">Academic Qualification</div>
-                    <div class="card-body ">
-                        <ul id="aqT2">
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nam.</li>
-
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nam.</li>
-
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nam.</li>
-                        </ul>
+    
+    <div class="print-area"> 
+        <div class="container" id="cv-template3">
+            <h1 class="d-flex justify-content-center">Template 3</h1>
+            <div class="row">
+                <div class="col-md-3 text-center py-5 background4">
+                    <div class="container" id="previewImg3" style="width: 200px;
+                        height: 200px;
+                        border: 3px solid white;
+                        background-position: center;
+                        background-size: cover;
+                        border-radius: 35%;">
 
                     </div>
-                </div>
+                    <script src="../js/profilePic.js"></script>
 
-                <div class="container text-center mt-4">
-                    <button onclick="printCV()" class="btn btn-dark">Print CV</button>
+                    <div class="container">
+                        <p id="nameTss">ABC</p>
+                        <p id="contactT3">+91-97983xxxx, +91-2321xxxx</p>
+                        <p id="addressT3">4232 Willow Greene Drive, 36104, Alabama, AL</p>
+
+                        <hr>
+
+                        <p><a id="fbT3" href="#1">abc@cybage.com</a></p>
+                        <p><a id="instaT3" href="#2">Git-Repository</a></p>
+                        <p><a id="linkedT3" href="#3">LinkedIn ID</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 py-5 background5">
+                    <!-- second column -->
+                    <h1 id="nameTss2" class="text-center" style="font-weight: 988;">Name</h1>
+
+                    <!-- objective card -->
+                    <div class="card mt-4">
+                        <div class="card-header background">Objective</div>
+                        <div class="card-body ">
+                            <p id="objectiveT3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro placeat
+                                voluptatem sint rerum nobis quam illo esse maxime doloribus accusantium dolorem saepe
+                                perferendis, odio necessitatibus dolorum ullam dolores pariatur unde assumenda quas ipsa
+                                expedita
+                                iure ab quisquam.
+                                Earum, consequatur! Debitis obcaecati sequi neque, vitae facere sed blanditiis fugit sint
+                                ea!</p>
+                        </div>
+                    </div>
+                    <!-- Work experience card -->
+                    <div class="card mt-4">
+                        <div class="card-header background">Work Experience</div>
+                        <div class="card-body ">
+                            <ul id="weT2">
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nam.</li>
+
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nam.</li>
+
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nam.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Academic Qualification -->
+                    <div class="card mt-4">
+                        <div class="card-header background">Academic Qualification</div>
+                        <div class="card-body ">
+                            <ul id="aqT2">
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nam.</li>
+
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nam.</li>
+
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nam.</li>
+                            </ul>
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
-
 
     <script src="../js/Template3.js"></script>
 
@@ -409,6 +429,9 @@
 
         <footer class="bg-dark text-center text-lg-start">
             <!-- Copyright -->
+            <div class="container text-center mt-4">
+                <button onclick="printCV()" class="btn btn-dark">Print CV</button>
+            </div>
             <div class="text-center p-3 text-light" style="background-color: rgba(0, 0, 0, 0.2);">
               © 2022 Copyright:
               <a class="text-light" href="https://www.cybage.com/">cybage.com</a>

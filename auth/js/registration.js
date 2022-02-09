@@ -39,7 +39,7 @@ $(document).ready(() => {
                 dataType: "json",
                 success: (x) => {
                     alert("Registration Successful "+username);
-                    window.location="http://127.0.0.1:5500/auth/html/login.html"
+                    window.location.href="http://127.0.0.1:5501/auth/html/login.html"
                 }
             })
         }
